@@ -1,0 +1,257 @@
+body{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 1ms;
+}
+#header{
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 9997;
+      
+}
+#header .navigation{
+    display: flex;
+    justify-content:space-between;
+    color: white;
+    align-items:center;
+    padding-left: 50px;
+    padding-right: 50px;  
+    
+}
+#header .navbar ul{
+    display: flex;
+    flex-direction: row;
+    color: transparent;
+}
+#header .navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#header .navbar a.active{
+    color: rgb(167, 164, 164);
+}
+#header .navbar a:hover{
+    color: rgb(167, 164, 164);
+}
+#header .navbar i{
+    padding-right: 4px;
+}
+#header .brand{
+    font-weight: bold;
+    font-size: larger;
+    letter-spacing: 3px;
+    color: rgb(216, 216, 216);
+}
+#header .brand .coloured{
+    color: orange;
+}
+
+@media screen and (min-width:768px){
+    section{
+        padding: 50px;
+        min-height: 100vh;
+
+    }   
+    #home{
+        padding-top: 80px;
+    } 
+}
+
+
+.section-title{
+    font-weight: bolder;
+    font-size: x-large;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+.section-title2{
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.section-title .coloured{
+    color: orange;
+}
+#home{
+    padding-top: 160px;
+}
+#home img{
+    width: 550px;
+    border-radius: 10px 15px;
+    
+}
+#products{
+    background-color: rgb(231, 231, 231);
+}
+
+#reviews{
+    margin-top: 40px;
+}
+
+#reviews .card-image{
+    min-width:200px;
+    padding:5px;
+}
+#reviews .card-image img{
+    height:200px;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    object-position: top;
+   
+}
+#reviews .card .reviewer{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#reviews .review-cards{
+    flex-wrap:wrap;
+    display: flex;
+    gap: 20px;
+   
+}
+
+
+
+#products .description{
+    padding-bottom: 30px;
+}
+#products .powespot-features{
+   
+    display: flex;
+    gap: 25px;
+   padding-top: 50px;
+}
+#products .feature{
+
+    display: flex;
+    flex-direction: column;
+
+}
+#products i{
+    font-size: 60px;
+}
+#products p{
+    font-weight: bold;
+}
+#products .powerspot-image img{
+    width: 500px;
+    cursor: pointer;
+
+}
+#products .powerspot-image:hover img{
+    opacity: .1;
+   transition: .5s linear;
+
+}
+#products .powerspot-image{
+    position: relative;
+}
+#products .powerspot-image .section-title{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    opacity: 0;
+}
+#products .powerspot-image:hover .section-title{
+    opacity: 1;
+   transition: .5s linear;
+
+}
+
+
+
+
+#contact{
+    background-color: rgb(231, 231, 231) ;
+}
+#contact a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+#contact a:hover{
+    color: orange;
+}
+#contact ul{
+    color: transparent;
+}
+.btn{
+    font-weight: bold;
+}
+.btn:hover{
+color: orange;
+background-color: transparent;
+border: 1px solid orange;
+}
+
+
+
+#news .news{
+    min-width: 300px;
+    padding: 20px;
+}
+#news .news img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 17px;
+    cursor: pointer;
+}
+#news .news img:hover{
+    opacity: .7;
+}
+#news .news-title{
+cursor: pointer;
+font-weight: bold;
+font-size: large;
+margin-top: 5px;
+}
+#news .news-title:hover,
+#news .publish-details:hover{
+    color: orange;
+}
+#news .publish-details{
+    font-style: italic;
+}
+@media screen and (max-width:768px){
+    section{
+        padding: 20px;
+        min-height: 100vh;
+
+    }   
+    
+    #home{
+        padding-top: 70px;
+    } 
+    #home img{
+        width: 400px;
+    }
+    .col{
+        padding-top: 40px;
+    }
+    #products .powespot-features{
+        padding-top: 10px !important;
+    }
+    #products .powerspot-image img{
+        width: 400px;
+    }
+    #header .navbar span{
+        display: none;
+    }
+    #header .brand{
+        font-size: medium;
+    }
+    .section-title{
+        padding-top: 50px !important;
+    }
+}
