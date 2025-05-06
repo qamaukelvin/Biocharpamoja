@@ -82,16 +82,53 @@ body{
 }
 #home{
     padding-top: 160px;
+    min-height: 100vh;
+    background: url("../images/pellets-4844847_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 #home img{
     width: 500px;
     border-radius: 10px 15px;
     
 }
+#home .introduction{
+    background-color: rgb(220, 219, 219);
+    opacity: .85;
+    border-radius: 20px;
+    padding: 20px;
+}
+#home .introduction p{
+    font-weight: bold;
+    
+}
 #products{
     background-color: rgb(231, 231, 231);
 }
-
+#products .rocc-kiln,
+#products .tuld,
+#products .panel-kiln{
+    min-width: 300px;
+}
+#products img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#products .product-title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+#products .more{
+    display: flex;
+    justify-content: center;
+}
 #reviews{
     margin-top: 40px;
 }
@@ -196,6 +233,10 @@ border: 1px solid orange;
 }
 
 
+#news a{
+    color: black;
+    text-decoration: none;
+}
 
 #news .news{
     min-width: 300px;
@@ -254,4 +295,41 @@ margin-top: 5px;
     .section-title{
         padding-top: 50px !important;
     }
+}
+
+
+
+
+#footer{
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 70px;
+    justify-content: center;
+}
+#footer .footer-title,
+#footer a{
+    color: white;
+    text-decoration: none;
+}
+#footer a:hover{
+    color: orange;
+}
+
+#footer .col{
+    min-width: 300px;
+    text-align: center;
+}
+#footer .copyright{
+    color: white;
+    padding-top: 50px;
+}
+#footer .footer-title{
+    padding-left: 25px;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
