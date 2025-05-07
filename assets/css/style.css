@@ -340,7 +340,9 @@ margin-top: 5px;
 #footer a:hover{
     color: orange;
 }
-
+#footer ul{
+    color: transparent;
+}
 #footer .col{
     min-width: 300px;
     text-align: center;
