@@ -1,6 +1,6 @@
 body {
     opacity: 0; /* Initially hidden */
-    transition: opacity 0.7s ease-in; /* Fade-in transition */
+    transition: opacity 0.5s ease-in; /* Fade-in transition */
   }
 body.loaded {
     opacity: 1; /* Make body visible */
@@ -15,7 +15,7 @@ body.loaded {
     align-items: center;
     z-index: 9999;
     opacity: 1; /* Initially visible */
-    transition: opacity 0.7s ease-out; /* Fade-out transition for loader */
+    transition: opacity 0.5s ease-out; /* Fade-out transition for loader */
   }
   
 #loader-wrapper.hidden {

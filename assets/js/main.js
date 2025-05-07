@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       setTimeout(() => {
         loader.style.display = "none";
-      }, 700);
+      }, 500);
     }, 4000);
   });
   
