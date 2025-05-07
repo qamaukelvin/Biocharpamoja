@@ -10,7 +10,17 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </head>
-<body>
+<div id="loader-wrapper">
+    <lottie-player
+      src="assets/loader/animations/Animation - 1746611039237.json"
+      background="transparent"
+      speed="1"
+      style="width: 200px; height: 200px;"
+      loop
+      autoplay>
+    </lottie-player>
+  </div>
+<body class="loaded">
     <header id="header">
         <div class="navigation">
             <div class="brand">BIOCHAR <span class="coloured">PAMOJA</span></div>
@@ -27,16 +37,7 @@
             </div>
         </div>
     </header>
-    <div id="loader-wrapper">
-        <lottie-player
-          src="assets/loader/manifest.json"
-          background="transparent"
-          speed="1"
-          style="width: 200px; height: 200px;"
-          loop
-          autoplay>
-        </lottie-player>
-      </div>
+    
     <main>
         <section id="home">
             <div class="container">

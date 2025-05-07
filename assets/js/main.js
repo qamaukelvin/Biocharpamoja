@@ -1,5 +1,17 @@
-window.addEventListener("load", () => {
-    document.getElementById("loader-wrapper").style.display = "none";
-    document.getElementById("content").style.display = "block";
+document.addEventListener("DOMContentLoaded", () => {
+    // Site content starts invisible
+  });
+  
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader-wrapper");
+  
+    setTimeout(() => {
+      loader.classList.add("hidden");
+      document.body.classList.add("loaded");
+  
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 700);
+    }, 4000);
   });
   
