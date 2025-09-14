@@ -324,6 +324,14 @@ max-width: 400px;
     .section-title{
         padding-top: 50px !important;
     }
+    #footer .col{
+    padding-left: 130px;
+   
+}
+  #footer .newsletter{
+    padding-left: 20px;
+   
+}
 }
 
 
@@ -334,10 +342,10 @@ max-width: 400px;
     right: 0;
     left: 0;
     background-color: black;
-    height: 400px;
+    height: fit-content;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
     justify-content: center;
 }
 #footer .footer-title,
@@ -354,6 +362,7 @@ max-width: 400px;
 #footer .col{
     min-width: 300px;
     text-align:left;
+   
 }
 #footer .copyright{
     color: white;
