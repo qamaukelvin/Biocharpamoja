@@ -269,6 +269,13 @@ border: 1px solid orange;
     border-radius: 12px 17px;
     cursor: pointer;
 }
+#news iframe{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 17px;
+    cursor: pointer;
+    height: 200px;
+}
 #news .news img:hover{
     opacity: .7;
 }
@@ -277,6 +284,7 @@ cursor: pointer;
 font-weight: bold;
 font-size: large;
 margin-top: 5px;
+max-width: 400px;
 }
 #news .news-title:hover,
 #news .publish-details:hover{
@@ -326,7 +334,7 @@ margin-top: 5px;
     right: 0;
     left: 0;
     background-color: black;
-    height: fit-content;
+    height: 400px;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -341,18 +349,18 @@ margin-top: 5px;
     color: orange;
 }
 #footer ul{
-    color: transparent;
+    color: white;
 }
 #footer .col{
     min-width: 300px;
-    text-align: center;
+    text-align:left;
 }
 #footer .copyright{
     color: white;
     padding-top: 50px;
 }
 #footer .footer-title{
-    padding-left: 25px;
+    padding-left: 15px;
     padding-bottom: 10px;
     font-weight: bold;
 }
