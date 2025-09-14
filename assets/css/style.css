@@ -229,7 +229,7 @@ body.loaded {
 
 
 #contact{
-    background-color: rgb(231, 231, 231) ;
+    background-color: white ;
 }
 #contact a{
     color: black;
@@ -254,6 +254,9 @@ border: 1px solid orange;
 }
 
 
+#news{
+    background-color: rgb(231, 231, 231);
+}
 #news a{
     color: black;
     text-decoration: none;
