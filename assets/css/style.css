@@ -1,6 +1,7 @@
 body {
     opacity: 0; /* Initially hidden */
     transition: opacity 0.5s ease-in; /* Fade-in transition */
+    
   }
 body.loaded {
     opacity: 1; /* Make body visible */
@@ -29,8 +30,9 @@ body.loaded {
     right: 0;
     left: 0;
     height: 70px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    opacity: .84;
     position: fixed;
     z-index: 9997;
       
@@ -50,15 +52,15 @@ body.loaded {
     color: transparent;
 }
 #header .navbar a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
 #header .navbar a.active{
-    color: rgb(167, 164, 164);
+    color: green;
 }
 #header .navbar a:hover{
-    color: rgb(167, 164, 164);
+    color: green;
 }
 #header .navbar i{
     padding-right: 4px;
@@ -67,10 +69,10 @@ body.loaded {
     font-weight: bold;
     font-size: larger;
     letter-spacing: 3px;
-    color: rgb(216, 216, 216);
+    color: black;
 }
 #header .brand .coloured{
-    color: orange;
+    color: darkgreen;
 }
 
 @media screen and (min-width:768px){
@@ -84,12 +86,15 @@ body.loaded {
     } 
 }
 
-
+section{
+    padding: 20px;
+}
 .section-title{
     font-weight: bolder;
     font-size: x-large;
     letter-spacing: 4px;
     margin-bottom: 40px;
+    padding-left: 20px;
 }
 .section-title2{
     font-weight: bolder;
@@ -99,34 +104,116 @@ body.loaded {
     margin-top: 30px;
 }
 .section-title .coloured{
-    color: orange;
+    color: green;
 }
+.btn a{
+    color: inherit;
+    text-decoration: none;
+    padding: 2px;
+}
+.btn{
+    border-radius: 40px;
+    margin-top: 40px;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+.btn:hover{
+color: green;
+background-color: transparent;
+border: 1px solid green;
+}
+
+
 #home{
-    padding-top: 160px;
+    margin-top: 80px;
     min-height: 100vh;
-    background: url("../images/pellets-4844847_1280.jpg");
+    background: rgba(255, 255, 255, 0.678);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px;
+    text-align: center;
 
 }
 #home img{
-    width: 500px;
+    width: 100%;
     border-radius: 10px 15px;
-    
+    object-fit: cover;
+    aspect-ratio: 5/3;
+    margin-bottom: 20px;
+}
+#home .heroimage{
+ min-width:300px;
+ 
 }
 #home .introduction{
-    background-color: rgb(220, 219, 219);
-    opacity: .85;
-    border-radius: 20px;
-    padding: 20px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#home .buttons{
+    display: flex;
+    justify-content: center;
 }
 #home .introduction p{
-    font-weight: bold;
+    font-weight:normal;
+    line-height: 40px;
+    text-align: center;
     
 }
+#home .introduction h2{
+    font-size:150%;
+    font-weight: bold;
+}
+
+
+
+
+
+
+#stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: rgba(0, 98, 0, 0.686);
+    padding: 40px;
+    flex-direction: row;
+}
+
+#stats .stat{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+#stats .icon i{
+    background-color: green;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    
+}
+#stats h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
+
+/* 
 #products{
     background-color: rgb(231, 231, 231);
 }
@@ -243,14 +330,6 @@ body.loaded {
 }
 #contact ul{
     color: transparent;
-}
-.btn{
-    font-weight: bold;
-}
-.btn:hover{
-color: orange;
-background-color: transparent;
-border: 1px solid orange;
 }
 
 
@@ -373,4 +452,79 @@ max-width: 400px;
     padding-bottom: 10px;
     font-weight: bold;
 }
+ */
 
+
+@media screen and (max-width:768px){
+    #header .navbar span{
+        display: none;
+    }
+    #header .brand{
+        font-size: medium;
+    }
+}
+ #footer{
+    min-height: 60vh;
+    background-color:rgb(25, 70, 25);
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    
+ }
+ #footer a{
+    color: white;
+    text-decoration: none;
+ }
+
+ #footer h3,
+ #footer h2{
+    font-size: larger;
+    color: white;
+ }
+ #footer p{
+    color: white;
+ }
+
+ #footer .socials ul{
+    display: flex;
+    color: transparent;
+    justify-content: space-around;
+    
+   
+ }
+
+ #footer .footeritemone{
+    text-align: center;
+    min-width: 300px;
+    margin-top: 30px;
+ }
+  #footer .footeritem{
+    text-align: center;
+    min-width: 300px;
+    margin-top: 30px;
+ }
+ #footer .footeritem li{
+    padding-right: 25px;
+ }
+ #footer ul{
+    color: transparent;
+ }
+
+ #footer .copyright{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+ }
+ #footer .copyright i{
+    color: white;
+    margin-top: 2px;
+    margin-right: 10px;
+ }
+ #footer .copyright h3{
+    font-weight: normal;
+    font-size: medium;
+ }
+
+ #footer a:hover{
+    color: green;
+ }
