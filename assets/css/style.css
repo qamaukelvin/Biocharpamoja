@@ -90,21 +90,33 @@ section{
     padding: 20px;
 }
 .section-title{
-    font-weight: bolder;
-    font-size: xx-large;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-    padding-left: 20px;
+    margin-top: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
 }
-.section-title2{
-    font-weight: bolder;
-    font-size: large;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
+.section-title h2{
+    font-weight: bold;
+    font-size:3rem;
+    margin-bottom: 30px;
+}
+
+.action{
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
-.section-title .coloured{
+.action .btn{
+    background-color: white;
     color: green;
+}
+.action .btn:hover{
+    color: white;
+    background-color: green;
 }
 .btn a{
     color: inherit;
@@ -170,7 +182,18 @@ border: 1px solid green;
     font-weight: bold;
 }
 
-
+#home .carousel-indicators button,
+#home .carousel-control-prev-icon,
+#home .carousel-control-next-icon{
+    background-color: darkgreen;
+}
+#home .catchphrase h2{
+    font-size:3rem;
+    margin-bottom: 30px;
+}
+#home .catchphrase .coloured{
+    color: green;
+}
 
 
 
@@ -194,6 +217,7 @@ border: 1px solid green;
     padding: 20px;
     color: white;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 #stats .icon i{
@@ -454,6 +478,46 @@ max-width: 400px;
 }
  */
 
+#projects .projects{
+    display: flex;
+
+}
+#projects .project{
+    min-width: 300px;
+    margin: 15px;
+    border-radius: 20px;
+    
+}
+#projects .project img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding-top:10px;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+#projects .project h2{
+    font-size: larger;
+    padding-top: 20px;
+    font-weight: bold;
+}
+#projects .project p{
+padding-bottom: 20px;
+}
+#projects a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
  #footer{
@@ -533,9 +597,9 @@ max-width: 400px;
     #home img{
     padding: 0;
     }
-    #home .heroimage{
-    padding: 0;
+    #home .carousel img{
+        height: 500px;
+    }
     
     
     }
-}
