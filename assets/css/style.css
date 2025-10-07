@@ -455,14 +455,7 @@ max-width: 400px;
  */
 
 
-@media screen and (max-width:768px){
-    #header .navbar span{
-        display: none;
-    }
-    #header .brand{
-        font-size: medium;
-    }
-}
+
  #footer{
     min-height: 60vh;
     background-color:rgb(25, 70, 25);
@@ -528,3 +521,21 @@ max-width: 400px;
  #footer a:hover{
     color: green;
  }
+
+ 
+@media screen and (max-width:768px){
+    #header .navbar span{
+        display: none;
+    }
+    #header .brand{
+        font-size: medium;
+    }
+    #home img{
+    padding: 0;
+    }
+    #home .heroimage{
+    padding: 0;
+    
+    
+    }
+}
