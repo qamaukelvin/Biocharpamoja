@@ -602,7 +602,8 @@ padding-bottom: 20px;
     #home img{
     padding: 0;
     }
-    #home .carousel img{
+    #home .carousel img,
+    #abouthero img{
         height: 500px;
     }
     
@@ -636,6 +637,7 @@ padding-bottom: 20px;
 #abouthero h2{
     font-size: 3rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 #abouthero p{
     margin-bottom: 30px;
