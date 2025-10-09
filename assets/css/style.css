@@ -487,6 +487,12 @@ max-width: 400px;
 }
  */
 
+
+ #projects{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+ }
 #projects .projects{
     display: flex;
     justify-content: center;
@@ -496,7 +502,11 @@ max-width: 400px;
     min-width: 300px;
     margin: 15px;
     border-radius: 20px;
-    
+    animation-name: fadeup;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%
 }
 #projects .project img{
     width: 100%;
