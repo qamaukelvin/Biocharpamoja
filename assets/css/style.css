@@ -72,7 +72,11 @@ body.loaded {
     color: black;
 }
 #header .brand .coloured{
-    color: darkgreen;
+    color: green;
+}
+#header .brand a{
+    text-decoration: none;
+    color: inherit;
 }
 
 @media screen and (min-width:768px){
@@ -480,6 +484,7 @@ max-width: 400px;
 
 #projects .projects{
     display: flex;
+    justify-content: center;
 
 }
 #projects .project{
@@ -603,3 +608,77 @@ padding-bottom: 20px;
     
     
     }
+
+
+/* About page */
+#abouthero{
+    min-height: 100vh;
+    padding: 20px;
+    margin-top: 120px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#abouthero .about{
+    display: flex;
+   
+   
+}
+#abouthero .about-image{
+    min-width: 300px;
+}
+#abouthero img{
+    width: 100%;
+    height:400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#abouthero h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#abouthero p{
+    margin-bottom: 30px;
+}
+#abouthero .value h2{
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:2rem;
+    font-weight: bold;
+
+}
+
+
+#journey{
+    min-height: 100vh;
+}
+#journey .journey{
+    display: flex;
+    justify-content: center;
+}
+#journey .col{
+    display: flex;
+    min-width:400px;
+    margin: 20px;
+}
+#journey .year{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    color: white;
+    background-color: green;
+    border-radius:20px;
+    width: 100px;
+    margin: 20px;
+}
+#journey .year h2{
+    font-size: 1rem;
+    padding: 20px;
+   
+}
+#journey .content h2{
+    font-size: large;
+    font-weight: bold;
+}
