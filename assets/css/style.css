@@ -191,11 +191,7 @@ border: 1px solid green;
     font-weight: bold;
 }
 
-#home .carousel-indicators button,
-#home .carousel-control-prev-icon,
-#home .carousel-control-next-icon{
-    background-color: darkgreen;
-}
+
 #home .catchphrase h2{
     font-size:3rem;
     margin-bottom: 30px;
@@ -227,6 +223,11 @@ border: 1px solid green;
     color: white;
     text-align: center;
     margin-bottom: 40px;
+    animation-name: slidein;
+    animation-timeline: view();
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-range: entry 0% cover 30%;
 }
 
 #stats .icon i{
@@ -678,7 +679,7 @@ padding-bottom: 20px;
     display: flex;
     min-width:400px;
     margin: 20px;
-    animation-name: fadeup;
+    animation-name: slidein;
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-timeline: view();
@@ -696,6 +697,7 @@ padding-bottom: 20px;
     }
     
 }
+
 #journey .year{
     display: flex;
     justify-content: center;
@@ -732,6 +734,22 @@ padding-bottom: 20px;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
+    animation-name: fadeup;
+    animation-range: entry 0% cover 30%;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timeline: view();
+}
+@keyframes slidein {
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
 }
 #panelkiln .partone img{
     width: 100%;
@@ -777,4 +795,24 @@ padding-bottom: 20px;
 }
 .projects .section-title{
     margin-top: 90px;
+}
+
+#contact{
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    padding: 40px;
+}
+#contact ul{
+color: transparent;
+}
+#contact li{
+    margin-bottom: 40px;
+}
+#contact a{
+    color: black;
+
+}
+#contact a:hover{
+    color: green;
 }
