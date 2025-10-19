@@ -1,0 +1,3 @@
+deployment:
+  tasks:
+    - /bin/rsync -av --delete ./ /home/romfdgrb/public_html/
