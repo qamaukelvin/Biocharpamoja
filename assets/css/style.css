@@ -824,5 +824,7 @@ color: transparent;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
     
 }
