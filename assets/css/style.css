@@ -111,6 +111,7 @@ section{
     font-weight: bold;
     font-size:3rem;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .action{
@@ -183,7 +184,7 @@ border: 1px solid green;
 #home .introduction p{
     font-weight:normal;
     line-height: 40px;
-    text-align: center;
+    text-align: justify;
     
 }
 #home .introduction h2{
@@ -622,9 +623,11 @@ padding-bottom: 20px;
     }
     #home .carousel img,
     #abouthero img{
-        height: 500px;
+        height: 300px;
     }
-    
+    .section-title p{
+        text-align: justify;
+    }
     
     }
 
@@ -660,6 +663,7 @@ padding-bottom: 20px;
 }
 #abouthero p{
     margin-bottom: 30px;
+    text-align: justify;
 }
 #abouthero .value h2{
     color: green;
@@ -668,7 +672,9 @@ padding-bottom: 20px;
     font-weight: bold;
 
 }
-
+#abouthero .description p{
+    text-align: center;
+}
 
 #journey{
     min-height: 100vh;
@@ -721,13 +727,15 @@ padding-bottom: 20px;
     font-size: large;
     font-weight: bold;
 }
-
+#journey .content p{
+    text-align: justify;
+}
 
 #panelkiln{
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    padding: 40px;
+    padding: 20px;
 }
 
 #panelkiln .partone .col{
@@ -741,6 +749,7 @@ padding-bottom: 20px;
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-timeline: view();
+    text-align: justify;
 }
 @keyframes slidein {
     0%{
@@ -764,6 +773,7 @@ padding-bottom: 20px;
     font-weight: bold;
     margin-bottom: 30px;
     margin-top: 10px;
+   
     
 }
 #panelkiln .partone h3{
@@ -827,4 +837,7 @@ color: transparent;
     margin-bottom: 30px;
     padding-top: 30px;
     
+}
+#contact form{
+    margin-top: 30px;
 }

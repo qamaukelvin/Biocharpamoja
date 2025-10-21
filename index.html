@@ -24,14 +24,14 @@
 
 </head>
 <div id="loader-wrapper">
-    <lottie-player
+    <!-- <lottie-player
       src="assets/loader/animations/Animation - 1746611039237.json"
       background="transparent"
       speed="1"
       style="width: 200px; height: 200px;"
       loop
       autoplay>
-    </lottie-player>
+    </lottie-player> -->
   </div>
 <body class="loaded">
     <header id="header">
@@ -68,28 +68,31 @@
                         </div>
                     </div>
                     <div class="col heroimage">
-                        <div class="carousel slide" id="carousel">
+                        <div class="carousel slide carousel-dark" id="carousel" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button class="active" data-bs-slide-to="0" data-bs-target="#carousel" aria-current="true" type="button" aria-label="Slide 1"></button>
-                                <button  data-bs-slide-to="1" data-bs-target="#carousel"  type="button" aria-label="Slide 2"></button>
+                                <button  data-bs-slide-to="1" data-bs-target="#carousel"  type="button" aria-label="Slide 2" ></button>
                                 <button  data-bs-slide-to="2" data-bs-target="#carousel"  type="button" aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="/assets/images/biocharfarm.jpeg" alt="" class="d-block w-100">
-                                </div>
-                                <div class="carousel-item">
+                                 <div class="carousel-item active" data-bs-interval="10000">
                                     <img src="/assets/images/kilnsrocc.jpeg" alt="" class="d-block w-100">
                                 </div>
-                                <div class="carousel-item">
+                                <div class="carousel-item"  data-bs-interval="10000">
+                                    <img src="/assets/images/biocharfarm.jpeg" alt="" class="d-block w-100">
+                                </div>
+                               
+                                <div class="carousel-item" data-bs-interval="10000">
                                     <img src="/assets/images/collegefarms.jpeg" alt="" class="d-block w-100">
                                 </div>
                             </div>
                             <button type="button" data-bs-slide="prev" data-bs-target="#carousel" class="carousel-control-prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
                             </button>
                             <button type="button" data-bs-slide="next" data-bs-target="#carousel" class="carousel-control-next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
                             </button>
                         </div>
                     </div>
@@ -213,7 +216,7 @@
                             </div>
                             <div class="description">
                                 <p>
-                                    Training 200+ farmers in Bungoma to
+                                    Training 1000+ farmers in Bungoma to
                                     turn crop residues into biochar,
                                     boosting maize yields by 20–30% and
                                     generating verified carbon credits
@@ -374,7 +377,7 @@
                             <ul>
                                 <li class="nav-item"><a class="nav-link" href="#">  <span></span>P.O Box  1157 - 50200</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#"> <i class="fas fa-map-marker-alt"></i> <span> Bungoma</span></a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"> <i class="fas fa-envelope"></i> <span>info@biocharpamoja.com</span></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"> <i class="fas fa-envelope"></i> <span>info@biocharpamoja.co.ke</span></a></li>
                                 <li class="nav-item"><a class="nav-link" href="#"> <i class="fas fa-phone"></i> <span>+254 723545858</span></a></li>
                             </ul>
                         </div>
