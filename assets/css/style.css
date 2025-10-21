@@ -841,3 +841,6 @@ color: transparent;
 #contact form{
     margin-top: 30px;
 }
+#contact .col{
+    min-width: 300px;
+}
