@@ -31,7 +31,7 @@ if (!isset($page_title)) { $page_title = "Biochar Pamoja"; }
 </head>
 
 <body>
-    <div id="loader-wrapper">
+    <!-- <div id="loader-wrapper">
         <lottie-player
           src="assets/loader/animations/Animation - 1746611039237.json"
           background="transparent"
@@ -40,7 +40,7 @@ if (!isset($page_title)) { $page_title = "Biochar Pamoja"; }
           loop
           autoplay>
         </lottie-player>
-    </div>
+    </div> -->
 
     <header id="header" class="fixed-top">
         <div class="container">
