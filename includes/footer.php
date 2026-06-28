@@ -82,6 +82,6 @@
 </a>
 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/main.js?v=5"></script>
+<script src="assets/js/main.js?v=6"></script>
 </body>
 </html>

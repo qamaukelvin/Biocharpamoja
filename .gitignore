@@ -1,3 +1,6 @@
-/vendor
+/assets/vendor
 .DS_Store
 .env
+/assets/videos/
+/assets/images/
+/assets/documents/
