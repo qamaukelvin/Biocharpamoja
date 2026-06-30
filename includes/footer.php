@@ -80,6 +80,6 @@
     </a>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js?v=6"></script>
+    <script src="assets/js/main.js?v=7"></script>
 </body>
 </html>
