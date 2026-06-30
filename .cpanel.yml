@@ -1,4 +1,4 @@
----
 deployment:
   tasks:
-    - rsync -av --exclude='.git' --exclude='.gitignore' ./ /home/romfdgrb/public_html/
+    - export DEPLOYPATH=/home/romfdgrb/public_html/
+    - /usr/bin/rsync -avz --exclude='.git' ./ $DEPLOYPATH
