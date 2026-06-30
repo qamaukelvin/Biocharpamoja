@@ -176,12 +176,12 @@ include 'includes/header.php';
 </div>
 
 <!-- HERO -->
-<section class="tlud-hero" id="hero">
+<section class="tlud-hero">
     <div class="tlud-hero-overlay"></div>
     <div class="tlud-hero-content text-center text-white px-3" data-aos="zoom-in" data-aos-duration="1000">
         <span class="badge bg-success mb-3 px-3 py-2" style="font-size:0.88rem;letter-spacing:1px;">CLEAN ENERGY PROJECT</span>
         <h1 class="display-3 fw-bold mb-3">Service Above Self</h1>
-        <p class="lead mb-4" style="max-width:640px;margin:0 auto 28px;">Transforming Health, Homes, and Hope in Bungoma through clean cooking solutions one stove at a time.</p>
+        <p class="lead mb-4" style="max-width:640px;margin:0 auto 28px;">Transforming Health, Homes, and Hope in Bungoma through clean cooking solutions — one stove at a time.</p>
         <div class="d-flex justify-content-center gap-3 flex-wrap">
             <a href="#project" class="btn btn-success btn-lg rounded-pill px-4">Our Story <i class="fas fa-arrow-down ms-2"></i></a>
             <a href="assets/documents/TLUD COOKSTOVE PROJECT REPORT.pdf" class="btn btn-outline-light btn-lg rounded-pill px-4" target="_blank">
@@ -231,7 +231,7 @@ include 'includes/header.php';
             <div class="col-md-7" data-aos="fade-left">
                 <div class="p-4 rounded-4" style="background:var(--bg-secondary);border:1px solid var(--border-color);">
                     <h3 class="fw-bold mb-1" style="color:var(--primary-green);">500 / 500 Stoves Distributed</h3>
-                    <p class="text-muted mb-3">Goal achieved. targeting 14+ Women Self-Help Groups across Bungoma County.</p>
+                    <p class="text-muted mb-3">Goal achieved — targeting 14+ Women Self-Help Groups across Bungoma County.</p>
                     <div class="progress mb-4" style="height:22px;">
                         <div class="progress-bar bg-success fw-bold" style="width:100%;">100% Complete</div>
                     </div>
@@ -272,33 +272,33 @@ include 'includes/header.php';
         <div class="row g-4">
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
                 <div class="feature-card">
-                    <div class="f-icon bg-danger bg-opacity-10"><i class="fas fa-fire text-light"></i></div>
+                    <div class="f-icon bg-danger bg-opacity-10"><i class="fas fa-fire text-danger"></i></div>
                     <h5 class="fw-bold mb-3">Technology That Changes Lives</h5>
-                    <p class="text-muted mb-0">The TLUD cookstove is a modern, efficient, and low-emission stove designed to burn pellets cleanly dramatically reducing indoor smoke and improving air quality. Women who once endured burning eyes and smoke-filled kitchens can now cook faster, cleaner, and more safely.</p>
+                    <p class="text-muted mb-0">The TLUD cookstove is a modern, efficient, and low-emission stove designed to burn pellets cleanly — dramatically reducing indoor smoke and improving air quality. Women who once endured burning eyes and smoke-filled kitchens can now cook faster, cleaner, and more safely.</p>
                 </div>
             </div>
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature-card">
-                    <div class="f-icon bg-success bg-opacity-10"><i class="fas fa-users text-light"></i></div>
+                    <div class="f-icon bg-success bg-opacity-10"><i class="fas fa-users text-success"></i></div>
                     <h5 class="fw-bold mb-3">Community Voices, Real Impact</h5>
                     <p class="text-muted mb-0">From Nengelwa to Mumias, the gratitude is profound. Women elders speak of preparing meals without smoke choking their kitchens. Chairpersons of women's groups celebrate relief from firewood collection, and mothers testify how the stoves bring dignity to meal preparation.</p>
                 </div>
             </div>
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="feature-card">
-                    <div class="f-icon bg-primary bg-opacity-10"><i class="fas fa-handshake text-light"></i></div>
+                    <div class="f-icon bg-primary bg-opacity-10"><i class="fas fa-handshake text-primary"></i></div>
                     <h5 class="fw-bold mb-3">A Partnership Rooted in Service</h5>
                     <p class="text-muted mb-0">This project is made possible by Rotary's unique ability to connect caring hearts across borders. Members from both regions have walked together from idea conception to community outreach to ensure that every cookstove donated brings lasting value.</p>
                 </div>
             </div>
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="feature-card">
-                    <div class="f-icon bg-warning bg-opacity-10"><i class="fas fa-leaf text-light"></i></div>
+                    <div class="f-icon bg-warning bg-opacity-10"><i class="fas fa-leaf text-warning"></i></div>
                     <h5 class="fw-bold mb-3">Beyond Cooking</h5>
                     <ul class="text-muted mb-0 ps-3" style="line-height:2.1;">
                         <li>Better health through reduced indoor air pollution</li>
                         <li>Environmental restoration by reducing firewood reliance</li>
-                        <li>Economic empowerment, saving time and money</li>
+                        <li>Economic empowerment — saving time and money</li>
                         <li>Stronger families through safer cooking options</li>
                     </ul>
                 </div>
@@ -650,17 +650,13 @@ include 'includes/header.php';
 
 <!-- Video Modal -->
 <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-lg" id="videoModalDialog">
         <div class="modal-content bg-black border-0">
             <div class="modal-header border-0 pb-0">
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body p-0">
-                <div class="ratio ratio-16x9" id="videoRatio">
-                    <video id="mainVideoPlayer" controls playsinline>
-                        <source src="" type="video/mp4">
-                    </video>
-                </div>
+            <div class="modal-body p-0" id="videoWrap">
+                <!-- video element inserted by JS so src is always set fresh -->
             </div>
         </div>
     </div>
@@ -860,33 +856,68 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* ── Video modal ── */
-const videoPlayer = document.getElementById('mainVideoPlayer');
-const videoRatio  = document.getElementById('videoRatio');
-const videoModal  = document.getElementById('videoModal');
+const videoModalEl = document.getElementById('videoModal');
+const videoWrap    = document.getElementById('videoWrap');
+const videoDialog  = document.getElementById('videoModalDialog');
+let   currentVideo = null;
 
 function loadVideo(src, isPortrait) {
-    videoPlayer.src = src;
-    videoPlayer.muted = true;
-    const dlg = videoModal.querySelector('.modal-dialog');
-    if (isPortrait) {
-        videoRatio.classList.remove('ratio-16x9');
-        videoRatio.classList.add('ratio-9x16');
-        dlg.classList.remove('modal-lg');
-        dlg.style.maxWidth = '300px';
-        dlg.style.margin = '1.75rem auto';
-    } else {
-        videoRatio.classList.remove('ratio-9x16');
-        videoRatio.classList.add('ratio-16x9');
-        dlg.classList.add('modal-lg');
-        dlg.style.maxWidth = '800px';
-    }
-    videoPlayer.play();
+    /* Store what we need; modal opens via data-bs-toggle automatically */
+    videoModalEl._pendingSrc      = src;
+    videoModalEl._pendingPortrait = !!isPortrait;
 }
 
-videoModal.addEventListener('hidden.bs.modal', function () {
-    videoPlayer.pause();
-    videoPlayer.currentTime = 0;
-    videoPlayer.src = '';
+videoModalEl.addEventListener('shown.bs.modal', function () {
+    const src       = videoModalEl._pendingSrc || '';
+    const portrait  = videoModalEl._pendingPortrait || false;
+
+    /* Remove any previous video */
+    videoWrap.innerHTML = '';
+
+    /* Build a fresh <video> element — avoids all src/load race issues */
+    const vid = document.createElement('video');
+    vid.controls   = true;
+    vid.playsinline = true;
+    vid.autoplay   = true;
+    vid.muted      = false;
+    vid.src        = src;
+
+    if (portrait) {
+        /* Narrow dialog for 9:16 shorts */
+        videoDialog.style.maxWidth = '360px';
+        videoDialog.style.width    = '360px';
+        /* Let the video fill width naturally; height = 16/9 * width ≈ 640px */
+        vid.style.width    = '100%';
+        vid.style.height   = '640px';
+        vid.style.display  = 'block';
+        vid.style.objectFit = 'cover';
+    } else {
+        /* Wide dialog for landscape */
+        videoDialog.style.maxWidth = '800px';
+        videoDialog.style.width    = '';
+        vid.style.width    = '100%';
+        vid.style.height   = 'auto';
+        vid.style.display  = 'block';
+        vid.style.maxHeight = '70vh';
+    }
+
+    videoWrap.appendChild(vid);
+    currentVideo = vid;
+
+    vid.load();
+    vid.play().catch(() => { /* autoplay blocked — controls visible, user taps play */ });
+});
+
+videoModalEl.addEventListener('hidden.bs.modal', function () {
+    if (currentVideo) {
+        currentVideo.pause();
+        currentVideo.src = '';
+        currentVideo = null;
+    }
+    videoWrap.innerHTML = '';
+    /* Reset dialog width for next open */
+    videoDialog.style.maxWidth = '';
+    videoDialog.style.width    = '';
 });
 </script>
 

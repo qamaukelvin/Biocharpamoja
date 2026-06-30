@@ -173,9 +173,10 @@ include 'includes/header.php';
     <div class="container">
         <div class="d-flex gap-2 flex-wrap">
             <button class="filter-btn active" onclick="filterProjects('all', this)">All Projects</button>
-            <button class="filter-btn" onclick="filterProjects('clean-energy', this)">Clean Energy</button>
-            <button class="filter-btn" onclick="filterProjects('carbon', this)">Carbon Removal</button>
-            <button class="filter-btn" onclick="filterProjects('agriculture', this)">Agriculture</button>
+            <button class="filter-btn" onclick="filterProjects('clean-energy', this)">Clean Cookstoves</button>
+            <button class="filter-btn" onclick="filterProjects('carbon', this)">Biochar Production</button>
+            <button class="filter-btn" onclick="filterProjects('agriculture', this)">Kiln Fabrication</button>
+             <button class="filter-btn" onclick="filterProjects('agriculture', this)">Micro Energy Solutions</button>
         </div>
     </div>
 </div>
@@ -198,8 +199,8 @@ include 'includes/header.php';
                             <span class="project-tag">Carbon Removal</span>
                             <span class="project-tag">Bungoma</span>
                         </div>
-                        <h3 class="project-title">PowerPellet TLUD Cookstoves</h3>
-                        <p class="project-desc">500 TLUD clean cookstoves distributed to 14+ women's self-help groups across Bungoma County. Each stove produces biochar, reduces indoor smoke, and charges phones via TEG — a triple impact per household.</p>
+                        <h3 class="project-title">Clean Cookstoves</h3>
+                        <p class="project-desc">500 TLUD clean cookstoves distributed to 14+ women's self-help groups across Bungoma County. Each stove produces biochar, reduces indoor smoke, and charges phones via TEG providing a triple impact per household.</p>
                         <div class="project-stats">
                             <div class="project-stat">
                                 <div class="val">500</div>
@@ -271,7 +272,7 @@ include 'includes/header.php';
                             <span class="project-tag">Bungoma</span>
                         </div>
                         <h3 class="project-title">Bungoma Biochar Farming</h3>
-                        <p class="project-desc">Training 1,000+ smallholder farmers to produce biochar from crop residues and apply it to their fields — boosting maize yields 20–30% and generating verified carbon credits as a new income stream.</p>
+                        <p class="project-desc">Training 1,000+ smallholder farmers to produce biochar from crop residues and apply it to their fields boosting maize yields 20–30% and generating verified carbon credits as a new income stream.</p>
                         <div class="project-stats">
                             <div class="project-stat">
                                 <div class="val">1,000+</div>

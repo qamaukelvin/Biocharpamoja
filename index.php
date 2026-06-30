@@ -98,7 +98,7 @@ include 'includes/header.php';
                                 <span class="fp-tag">Clean Energy</span>
                                 <span class="fp-tag">Bungoma</span>
                             </div>
-                            <h4 class="fp-title">PowerPellet TLUD Cookstoves</h4>
+                            <h4 class="fp-title">Clean Cookstoves</h4>
                             <p class="fp-desc">500 clean cookstoves distributed to 14+ women's groups, reducing indoor smoke, generating biochar, and charging phones via TEG technology.</p>
                             <div class="fp-stats">
                                 <div class="fp-stat">
