@@ -137,7 +137,7 @@ include 'includes/header.php';
     <div class="farm-hero-content text-center text-white px-3" data-aos="zoom-in" data-aos-duration="1000">
         <span class="badge mb-3 px-3 py-2" style="background: var(--primary-green); font-size:0.9rem; letter-spacing:1px;">SUSTAINABLE AGRICULTURE PROJECT</span>
         <h1 class="display-3 fw-bold mb-3">Bungoma Biochar Farming</h1>
-        <p class="lead mb-4" style="max-width:660px; margin:0 auto 28px;">Training 1,000+ farmers to turn crop waste into biochar — boosting maize yields by 20–30% while removing carbon from the atmosphere.</p>
+        <p class="lead mb-4" style="max-width:660px; margin:0 auto 28px;">Training 1,000+ farmers to turn crop waste into biochar boosting maize yields by 20–30% while removing carbon from the atmosphere.</p>
         <div class="d-flex justify-content-center gap-3 flex-wrap">
             <a href="#overview" class="btn btn-success btn-lg rounded-pill px-4">The Project <i class="fas fa-arrow-down ms-2"></i></a>
             <a href="../contact.php" class="btn btn-outline-light btn-lg rounded-pill px-4">Partner With Us</a>
@@ -177,10 +177,10 @@ include 'includes/header.php';
                 <span class="text-uppercase fw-bold" style="color: var(--primary-green); letter-spacing:2px; font-size:0.85rem;">The Initiative</span>
                 <h2 class="fw-bold mt-2 mb-4">From Crop Waste to Soil Gold</h2>
                 <p class="text-muted mb-4" style="line-height:1.9;">
-                    Bungoma County sits in the heart of Kenya's western agricultural belt — rich in maize, sugarcane, and banana production, but also generating vast quantities of crop residue that is typically burned openly, releasing carbon and degrading local soils.
+                    Bungoma County sits in the heart of Kenya's western agricultural belt rich in maize, sugarcane, and banana production, but also generating vast quantities of crop residue that is typically burned openly, releasing carbon and degrading local soils.
                 </p>
                 <p class="text-muted mb-4" style="line-height:1.9;">
-                    Biochar Pamoja's flagship farming programme turns that waste into an asset. Farmers are trained to produce biochar from their own residues using RoCC and Panel kilns, then apply it to their fields as a permanent soil amendment — increasing yields, reducing synthetic fertiliser dependence, and generating verified carbon credits.
+                    Biochar Pamoja's flagship farming programme turns that waste into an asset. Farmers are trained to produce biochar from their own residues using RoCC and Panel kilns, then apply it to their fields as a permanent soil amendment increasing yields, reducing synthetic fertiliser dependence, and generating verified carbon credits.
                 </p>
                 <p class="text-muted" style="line-height:1.9;">
                     Since pilot projects in Bungoma County began, the programme has demonstrated consistent maize yield increases of 20–30%, confirmed by independent field measurements, while removing over 170 tonnes of CO₂e from the atmosphere.
@@ -252,14 +252,14 @@ include 'includes/header.php';
                 <div class="benefit-card orange">
                     <i class="fas fa-coins fa-2x mb-3" style="color: var(--logo-orange);"></i>
                     <h6 class="fw-bold mb-2">Carbon Credit Income</h6>
-                    <p class="text-muted mb-0">Each tonne of biochar incorporated into soil represents ~2.2 tonnes of CO₂e permanently removed. Farmers earn carbon credit income on top of their improved harvests — a direct financial incentive.</p>
+                    <p class="text-muted mb-0">Each tonne of biochar incorporated into soil represents ~2.2 tonnes of CO₂e permanently removed. Farmers earn carbon credit income on top of their improved harvests, a direct financial incentive.</p>
                 </div>
             </div>
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="benefit-card blue">
                     <i class="fas fa-recycle fa-2x mb-3 text-primary"></i>
                     <h6 class="fw-bold mb-2">Waste Elimination</h6>
-                    <p class="text-muted mb-0">Crop residues that were previously burned openly — releasing smoke and CO₂ — are now feedstock for biochar. This eliminates a local air quality problem while creating value on the farm.</p>
+                    <p class="text-muted mb-0">Crop residues that were previously burned openly, releasing smoke and CO₂ are now feedstock for biochar. This eliminates a local air quality problem while creating value on the farm.</p>
                 </div>
             </div>
         </div>
@@ -285,7 +285,7 @@ include 'includes/header.php';
                 <div class="phase-card">
                     <div class="phase-icon"><i class="fas fa-fire"></i></div>
                     <h6 class="fw-bold mb-2">2. Production</h6>
-                    <p class="text-muted small mb-0">Farmers collect crop residue and produce biochar using shared kilns. Production is logged with GPS coordinates and photos using CharTrac Digital MRV.</p>
+                    <p class="text-muted small mb-0">Farmers collect crop residue and produce biochar using shared kilns. Production is logged with GPS coordinates and photos.</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
@@ -299,7 +299,7 @@ include 'includes/header.php';
                 <div class="phase-card">
                     <div class="phase-icon"><i class="fas fa-certificate"></i></div>
                     <h6 class="fw-bold mb-2">4. Carbon Credits</h6>
-                    <p class="text-muted small mb-0">Verified removals are issued as carbon credits. Revenue is split between farmers and the programme — giving smallholders a new, recurring income stream.</p>
+                    <p class="text-muted small mb-0">Verified removals are issued as carbon credits. Revenue is split between farmers and the programme giving smallholders a new, recurring income stream.</p>
                 </div>
             </div>
         </div>

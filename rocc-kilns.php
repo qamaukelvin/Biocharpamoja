@@ -258,7 +258,7 @@ include 'includes/header.php';
                         <i class="fas fa-cloud text-light"></i>
                     </div>
                     <h6 class="fw-bold mb-2">Carbon Removal Verified</h6>
-                    <p class="text-muted mb-0">By 2023, over 170 tonnes of CO₂e had been durably removed and verified setting the foundation for Biochar Pamoja's transition to GPS tracking and photohraph records.</p>
+                    <p class="text-muted mb-0">By 2023, over 170 tonnes of CO₂e had been durably removed and verified setting the foundation for Biochar Pamoja's transition to GPS tracking and photograph records.</p>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">

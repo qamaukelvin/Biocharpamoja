@@ -171,17 +171,17 @@ include 'includes/header.php';
         <span class="sep">›</span>
         <a href="projects.php">Projects</a>
         <span class="sep">›</span>
-        <span style="color:var(--text-muted);">PowerPellet TLUD Cookstoves</span>
+        <span style="color:var(--text-muted);">Clean Cookstoves</span>
     </div>
 </div>
 
 <!-- HERO -->
-<section class="tlud-hero">
+<section class="tlud-hero" id="hero">
     <div class="tlud-hero-overlay"></div>
     <div class="tlud-hero-content text-center text-white px-3" data-aos="zoom-in" data-aos-duration="1000">
-        <span class="badge bg-success mb-3 px-3 py-2" style="font-size:0.88rem;letter-spacing:1px;">CLEAN ENERGY PROJECT</span>
+        <span class="badge bg-success mb-3 px-3 py-2" style="font-size:0.88rem;letter-spacing:1px;">CLEAN COOKSTOVES PROJECT</span>
         <h1 class="display-3 fw-bold mb-3">Service Above Self</h1>
-        <p class="lead mb-4" style="max-width:640px;margin:0 auto 28px;">Transforming Health, Homes, and Hope in Bungoma through clean cooking solutions — one stove at a time.</p>
+        <p class="lead mb-4" style="max-width:640px;margin:0 auto 28px;">Transforming Health, Homes, and Hope in Bungoma through clean cooking solutions one stove at a time.</p>
         <div class="d-flex justify-content-center gap-3 flex-wrap">
             <a href="#project" class="btn btn-success btn-lg rounded-pill px-4">Our Story <i class="fas fa-arrow-down ms-2"></i></a>
             <a href="assets/documents/TLUD COOKSTOVE PROJECT REPORT.pdf" class="btn btn-outline-light btn-lg rounded-pill px-4" target="_blank">
@@ -272,28 +272,28 @@ include 'includes/header.php';
         <div class="row g-4">
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
                 <div class="feature-card">
-                    <div class="f-icon bg-danger bg-opacity-10"><i class="fas fa-fire text-danger"></i></div>
+                    <div class="f-icon bg-danger bg-opacity-10"><i class="fas fa-fire text-light"></i></div>
                     <h5 class="fw-bold mb-3">Technology That Changes Lives</h5>
                     <p class="text-muted mb-0">The TLUD cookstove is a modern, efficient, and low-emission stove designed to burn pellets cleanly — dramatically reducing indoor smoke and improving air quality. Women who once endured burning eyes and smoke-filled kitchens can now cook faster, cleaner, and more safely.</p>
                 </div>
             </div>
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature-card">
-                    <div class="f-icon bg-success bg-opacity-10"><i class="fas fa-users text-success"></i></div>
+                    <div class="f-icon bg-success bg-opacity-10"><i class="fas fa-users text-light"></i></div>
                     <h5 class="fw-bold mb-3">Community Voices, Real Impact</h5>
                     <p class="text-muted mb-0">From Nengelwa to Mumias, the gratitude is profound. Women elders speak of preparing meals without smoke choking their kitchens. Chairpersons of women's groups celebrate relief from firewood collection, and mothers testify how the stoves bring dignity to meal preparation.</p>
                 </div>
             </div>
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="feature-card">
-                    <div class="f-icon bg-primary bg-opacity-10"><i class="fas fa-handshake text-primary"></i></div>
+                    <div class="f-icon bg-primary bg-opacity-10"><i class="fas fa-handshake text-light"></i></div>
                     <h5 class="fw-bold mb-3">A Partnership Rooted in Service</h5>
                     <p class="text-muted mb-0">This project is made possible by Rotary's unique ability to connect caring hearts across borders. Members from both regions have walked together from idea conception to community outreach to ensure that every cookstove donated brings lasting value.</p>
                 </div>
             </div>
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="feature-card">
-                    <div class="f-icon bg-warning bg-opacity-10"><i class="fas fa-leaf text-warning"></i></div>
+                    <div class="f-icon bg-warning bg-opacity-10"><i class="fas fa-leaf text-light"></i></div>
                     <h5 class="fw-bold mb-3">Beyond Cooking</h5>
                     <ul class="text-muted mb-0 ps-3" style="line-height:2.1;">
                         <li>Better health through reduced indoor air pollution</li>
@@ -879,7 +879,7 @@ videoModalEl.addEventListener('shown.bs.modal', function () {
     vid.controls   = true;
     vid.playsinline = true;
     vid.autoplay   = true;
-    vid.muted      = false;
+    vid.muted      = true;
     vid.src        = src;
 
     if (portrait) {
